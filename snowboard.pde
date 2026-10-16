@@ -10,10 +10,15 @@ void setup() {
   }
 
   main = new Main();
-  
 }
 
 void draw() {
   main.update();
   main.display();
+//   println(mouseX);
+//   println(mouseY);
+
 }
+
+void keyPressed()  { main.keyPressed(); }
+void keyReleased() { main.keyReleased(); }
